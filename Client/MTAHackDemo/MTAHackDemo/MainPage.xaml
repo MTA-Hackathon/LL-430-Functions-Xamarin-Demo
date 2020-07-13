@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MTAHackDemo"
+             x:Class="MTAHackDemo.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+
+        <Entry x:Name="Agency"
+               Placeholder="Enter the Agency Acronym"
+               PlaceholderColor="Gray" />
+        
+        <Entry x:Name="complaintType"
+               Placeholder="Enter the Complaint Type"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="Descriptor"
+               Placeholder="Enter the Descriptor"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="Zip"
+               Placeholder="Enter the Zip"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="dayOfMonth"
+               Placeholder="Enter the Day of the Month (Number)"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="dayOfWeek"
+               Placeholder="Enter the Day of the Week (Number)"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="MonthNum"
+               Placeholder="Enter the Month Number"
+               PlaceholderColor="Gray" />
+
+        <Entry x:Name="avgTemp"
+               Placeholder="Enter the Average Temperature"
+               PlaceholderColor="Gray" />
+
+        <Button Text="Submit"
+                x:Name="SubmitButton" />
+
+        <Label x:Name="Result"
+               FontSize="Large"
+               TextColor="Black"
+               Text="Please enter Complaint Details for Time Estimate" />
+
+        <Label x:Name="TimeOnServer"
+               FontSize="Micro"
+               Text="Server Time: Awaiting Result"
+               TextColor="Black"
+               HorizontalTextAlignment="End" />
+
+    </StackLayout>    
+    
+</ContentPage>
